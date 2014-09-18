@@ -9,7 +9,7 @@ Advantages
 	- Decreas 
 Basic Example
 --------------
-[Demo]:https://rawgit.com/sajjad-shirazy/BootJStrap/master/test/index.htm
+[Demo]:http://alelmo.com
 ```html 
 <!DOCTYPE html>
 <html>
