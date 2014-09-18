@@ -26,7 +26,25 @@ var jumbotron = B.jumbotron().css('text-align', 'center').append(
 );
 B.body.append(topMenu, div_container.append(jumbotron));
 ```
-
+### outputs:
+```html
+<nav class="navbar navbar-fixed-top navbar-default" role="navigation" style="top: 0px; z-index: 1029;">
+  <div class="container">
+    <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#i07u9277"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">BootJStrap</a></div>
+    <div id="i07u9277" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav"></ul>
+      <ul class="nav navbar-nav navbar-right"></ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="jumbotron" style="text-align: center;">
+    <h1><kbd>With BOOTJSTRAP ...</kbd></h1>
+    <h3>you can remove html from your coding :)</h3>
+    <br><br><br><a href="..." class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-star"></span> Getting Started</a>
+  </div>
+</div>
+```
 
 ## Components
 ###utils
