@@ -5,8 +5,13 @@ Bootstrap Javascript Building Blocks
 
 Advantages
 --------------
-	- Removing client side proccesses from server side
-	- Decreas 
+- Removing client side processes from server side.
+- Decrease Data transfer between client and server.
+- Having a clear MVC design.
+- Removing HTML codes from your programming pipeline.
+- Leave using HTML id`s forever.
+- Increasing your client side running speed without removing using Javascript selectors, because you have all pointers to your elements.
+	
 Basic Example
 --------------
 [Demo]
