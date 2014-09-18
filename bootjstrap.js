@@ -1,8 +1,9 @@
-﻿/* ========================================================================
-* BootJStrap: bootjstrap.js v0.1.0
-* ========================================================================
-* Mail me : shirazy.sajjad@gmail.com
-* ======================================================================== */
+﻿/*!
+ * BootJStrap: v1.0.0 (https://github.com/sajjad-shirazy/BootJStrap)
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Email:shirazy.sajjad@gmail.com
+ * from 2014
+ */
 var bootJStrap = (function ($) {
     return {
         //--------------------------------------------------------------
