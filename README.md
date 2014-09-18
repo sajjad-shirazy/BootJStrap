@@ -31,7 +31,6 @@ var jumbotron = B.jumbotron().css('text-align', 'center').append(B.h1().append(
 
 
 ## Components
----
 ###utils
 ```js
 head: JQuery;
