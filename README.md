@@ -3,9 +3,13 @@ BootJStrap
 
 Bootstrap Javascript Building Blocks
 
+Advantages
+--------------
+	- Removing client side proccesses from server side
+	- Decreas 
 Basic Example
 --------------
-
+[Demo]:https://rawgit.com/sajjad-shirazy/BootJStrap/master/test/index.htm
 ```html 
 <!DOCTYPE html>
 <html>
