@@ -28,84 +28,220 @@ var jumbotron = B.jumbotron().css('text-align', 'center').append(B.h1().append(
     B.body.append(topMenu, div_container.append(jumbotron));
 }
 ```
-Components
--------------
+
+
+## Components
+---
+###utils
+```js
 head: JQuery;
-    body: JQuery;
-    _UID: Date;
-    topmenusCount: number;
-    dom(name, attr?): JQuery;
-    uniqueId(): string;
-    each(target: any, func: Function, bind?: any);
-    uniqe(array: any[]): any[];
-    //--------------------------------------------------------------
-    // basic elements
-    p(attr?): JQuery;
-    em(attr?): JQuery;
-    hr(attr?): JQuery;
-    h1(attr?): JQuery;
-    h2(attr?): JQuery;
-    h3(attr?): JQuery;
-    h4(attr?): JQuery;
-    h5(attr?): JQuery;
-    small(attr?): JQuery;
-    br(times?,attr?): JQuery;
-    center(attr?): JQuery;
-    kbd(content?): JQuery;
-    div(attr?): JQuery;
-    img(attr?): JQuery;
-    span(attr?): JQuery;
-    strong(childs?, attr?): JQuery;
-    ul(items?, attr?): JQuery;
-    li(attr?): JQuery;
-    svg(attr?): JQuery;
-    //--------------------------------------------------------------
-    // UI
-    a(attr?, icon?): JQuery;
-    button(attr?, icon?): JQuery;
-    input(attr?): JQuery;
-    text(attr?): JQuery;
-    textarea(attr?): JQuery;
-    email(attr?): JQuery;
-    password(attr?): JQuery;
-    checkbox(attr?, desc?): JQuery;
-    radio(attr?, desc?): JQuery;
-    option(attr?): JQuery;
-    /**
-    * data : [item1,item2,...]
-    * data : [[item1,value1],[item2,value2],...]
-    */
-    options(data): any[];
-    /**
-    * items : [item1,item2,...]
-    * items : [[item1,value1],[item2,value2],...]
-    */
-    select(items?, attr?): JQuery;
-    submit(attr?, icon?): JQuery;
-    form(attr?): JQuery;
-    formGroup(attr?): JQuery;
-    inputGroup(attr?): JQuery;
-    inputAddon(minWidth, attr?): JQuery;
-    inputAddonControl(minWidth, attr?): JQuery;
-    label(forId, text, desc): JQuery;
-    table(columns, rows): JQuery;
-    tr(cells, cellTag): JQuery;
-    fieldset(attr?);
-    //--------------------------------------------------------------
-    // components
-    pageHeader(attr?): JQuery;
-    pageFooter(attr?): JQuery;
-    labeledControl(id?, label?, desc?, lWidth?, control?): JQuery;
-    panel(header?: any, body?: any, footer?: any): JQuery;
-    progress(): JQuery;
-    progressBar(value?: number, min?: number, max?: number): JQuery;
-    alert(icon?: string): JQuery;
-    collapse(id): JQuery;
-    glyphicon(name): JQuery;
-    dropdown(tag, title, items, icon?): JQuery;
-    navbar(brand, left_menu, left_things, right_menu): JQuery;
-    breadcrumb(): JQuery;
-    topmenu(brand?, left_menu?, left_things?, right_menu?): JQuery;
-    modal(size, header, body, footer);
-    jumbotron(): JQuery;
+```
+```js
+body: JQuery;
+```
+```js
+_UID: Date;
+```
+```js
+topmenusCount: number;
+```
+```js
+dom(name, attr?): JQuery;
+```
+```js
+uniqueId(): string;
+```
+```js
+each(target: any, func: Function, bind?: any);
+```
+```js
+uniqe(array: any[]): any[];
+```
+---
+###basic elements
+```js
+p(attr?): JQuery;
+```
+```js
+em(attr?): JQuery;
+```
+```js
+hr(attr?): JQuery;
+```
+```js
+h1(attr?): JQuery;
+```
+```js
+h2(attr?): JQuery;
+```
+```js
+h3(attr?): JQuery;
+```
+```js
+h4(attr?): JQuery;
+```
+```js
+h5(attr?): JQuery;
+```
+```js
+small(attr?): JQuery;
+```
+```js
+br(times?,attr?): JQuery;
+```
+```js
+center(attr?): JQuery;
+```
+```js
+kbd(content?): JQuery;
+```
+```js
+div(attr?): JQuery;
+```
+```js
+img(attr?): JQuery;
+```
+```js
+span(attr?): JQuery;
+```
+```js
+strong(childs?, attr?): JQuery;
+```
+```js
+ul(items?, attr?): JQuery;
+```
+```js
+li(attr?): JQuery;
+```
+```js
+svg(attr?): JQuery;
+```
+---
+###ui
+```js
+a(attr?, icon?): JQuery;
+```
+```js
+button(attr?, icon?): JQuery;
+```
+```js
+input(attr?): JQuery;
+```
+```js
+text(attr?): JQuery;
+```
+```js
+textarea(attr?): JQuery;
+```
+```js
+email(attr?): JQuery;
+```
+```js
+password(attr?): JQuery;
+```
+```js
+checkbox(attr?, desc?): JQuery;
+```
+```js
+radio(attr?, desc?): JQuery;
+```
+```js
+option(attr?): JQuery;
+```
+- data : [item1,item2,...]
+- data : [[item1,value1],[item2,value2],...]
+
+```js
+options(data): any[];
+```
+- items : [item1,item2,...]
+- items : [[item1,value1],[item2,value2],...]
+
+```js
+select(items?, attr?): JQuery;
+```
+```js
+submit(attr?, icon?): JQuery;
+```
+```js
+form(attr?): JQuery;
+```
+```js
+formGroup(attr?): JQuery;
+```
+```js
+inputGroup(attr?): JQuery;
+```
+```js
+inputAddon(minWidth, attr?): JQuery;
+```
+```js
+inputAddonControl(minWidth, attr?): JQuery;
+```
+```js
+label(forId, text, desc): JQuery;
+```
+```js
+table(columns, rows): JQuery;
+```
+```js
+tr(cells, cellTag): JQuery;
+```
+```js
+fieldset(attr?);
+```
+---
+###components
+```js
+pageHeader(attr?): JQuery;
+```
+```js
+pageFooter(attr?): JQuery;
+```
+```js
+labeledControl(id?, label?, desc?, lWidth?, control?): JQuery;
+```
+```js
+panel(header?: any, body?: any, footer?: any): JQuery;
+```
+```js
+progress(): JQuery;
+```
+```js
+progressBar(value?: number, min?: number, max?: number): JQuery;
+```
+```js
+alert(icon?: string): JQuery;
+```
+```js
+collapse(id): JQuery;
+```
+```js
+glyphicon(name): JQuery;
+```
+```js
+dropdown(tag, title, items, icon?): JQuery;
+```
+```js
+navbar(brand, left_menu, left_things, right_menu): JQuery;
+```
+```js
+breadcrumb(): JQuery;
+```
+```js
+topmenu(brand?, left_menu?, left_things?, right_menu?): JQuery;
+```
+```js
+modal(size, header, body, footer);
+```
+```js
+jumbotron(): JQuery;
+```
+---
+
+	
+License
+----
+MIT
+
 [Demo]:https://rawgit.com/sajjad-shirazy/BootJStrap/master/test/index.htm
