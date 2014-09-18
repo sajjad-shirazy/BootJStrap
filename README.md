@@ -60,8 +60,8 @@ B.body.append(topMenu, div_container.append(jumbotron));
 </div>
 ```
 ###compare
-429 characters on Javascript
-884 characters on HTML
+- 429 characters on Javascript
+- 884 characters on HTML
 
 ratio : 0.48
 
