@@ -237,7 +237,6 @@ modal(size, header, body, footer);
 ```js
 jumbotron(): JQuery;
 ```
----
 
 	
 License
