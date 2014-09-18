@@ -23,7 +23,7 @@ var jumbotron = B.jumbotron().css('text-align', 'center').append(B.h1().append(
     ),
     B.h3().append('you can remove html from your coding :)'),
     B.br(3),
-    B.a({ href: 'https://github.com/sajjad-shirazy/BootJStrap' }, 'star').addClass('btn btn-danger btn-lg').append('Getting Started')
+    B.a({ href: '...' }, 'star').addClass('btn btn-danger btn-lg').append('Getting Started')
     );
     B.body.append(topMenu, div_container.append(jumbotron));
 }
