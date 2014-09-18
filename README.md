@@ -39,12 +39,6 @@ head: JQuery;
 body: JQuery;
 ```
 ```js
-_UID: Date;
-```
-```js
-topmenusCount: number;
-```
-```js
 dom(name, attr?): JQuery;
 ```
 ```js
