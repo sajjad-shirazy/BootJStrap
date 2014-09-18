@@ -6,7 +6,7 @@ Bootstrap Javascript Building Blocks
 Basic Example
 --------------
 
-```
+```html 
 <!DOCTYPE html>
 <html>
     <head>
