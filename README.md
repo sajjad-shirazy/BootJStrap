@@ -10,7 +10,7 @@ Advantages
 - Having a clear MVC design.
 - Removing HTML codes from your programming pipeline.
 - Leave using HTML id`s forever.
-- Increasing your client side running speed without removing using Javascript selectors, because you have all pointers to your elements.
+- Increasing your client side running speed with leaving using of Javascript selectors, because you have all pointers to your elements.
 	
 Basic Example
 --------------
