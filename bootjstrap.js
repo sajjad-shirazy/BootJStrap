@@ -1,9 +1,8 @@
-﻿/*!
- * BootJStrap: v1.0.0 (https://github.com/sajjad-shirazy/BootJStrap)
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * Email:shirazy.sajjad@gmail.com
- * from 2014
- */
+﻿/* ========================================================================
+* BootJStrap: bootjstrap.js v0.1.0
+* ========================================================================
+* Mail me : shirazy.sajjad@gmail.com
+* ======================================================================== */
 var bootJStrap = (function ($) {
     return {
         //--------------------------------------------------------------
@@ -247,7 +246,7 @@ var bootJStrap = (function ($) {
             var collapseId = B.uniqueId();
             return B.dom('nav', { 'class': 'navbar', role: 'navigation' }).append(
 		        B.div().append(
-			        B.navbar.header(collapseId).append((brand && brand instanceof jQuery ? brand : B.span().append(brand)).addClass('navbar-brand')),
+			        B.navbar.header(collapseId).append((brand || $('')).addClass('navbar-brand')),
                     B.collapse(collapseId).append(
                         B.ul(left_menu).addClass('nav navbar-nav'),
                         left_things,
@@ -263,6 +262,49 @@ var bootJStrap = (function ($) {
                 return B.div().addClass('navbar-header').append(btn_toggle);
             }
         }),
+        //items = [[title:JQuery,content:JQuery], [title:JQuery,content:JQuery], ...]
+        accordion: function (items, css) {
+            var accordion_id = B.uniqueId(),
+                result = B.div({ id: accordion_id }).addClass('panel-group');
+            B.each(items, function (i, item) {
+                console.log(item);
+                var id = B.uniqueId(),
+                    panel = B.panel(
+                        //title
+                        B.span().css('font-weight', 'bolder').addClass('panel-title').append(B.a({
+                            'data-toggle': 'collapse',
+                            'data-parent': '#' + accordion_id,
+                            href: '#' + id
+                        }).append(item[0])),
+                        //body
+                        item[1]
+                        ).addClass(css || 'panel-default');
+                B.div({ id: id }).addClass('panel-collapse collapse').append(panel.find('.panel-body')).appendTo(panel);
+                result.append(panel);
+            });
+            return result;
+        },
+        /**
+        * you can use .val of returned Object to get selected index 
+        * returns: JQuery
+        * items : [[title,content], [title,content],...]
+        */
+        tab: function (items, attr) {
+            var tabs = B.ul(null, $.extend({ role: 'tablist' }, attr)).addClass('nav nav-tabs'),
+                contents = B.div().addClass('tab-content');
+            B.each(items, function (index, item) {
+                var id = B.uniqueId();
+                tabs.append(B.li().append(B.a({ href: '#' + id, 'data-toggle': 'tab' }).append(item[0])));
+                contents.append(B.div({ id: id }).addClass('tab-pane').append(item[1]));
+            });
+            tabs.children().first().addClass('active');
+            contents.children().first().addClass('active');
+            return $.extend([tabs, contents], {
+                val: function () {
+                    return tabs.find('.active').index();
+                }
+            });
+        },
         breadcrumb: function () {
             return B.dom('ol').addClass('breadcrumb');
         },

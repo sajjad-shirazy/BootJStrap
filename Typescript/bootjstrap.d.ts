@@ -26,13 +26,17 @@ interface BootJStrap {
     h4(attr?): JQuery;
     h5(attr?): JQuery;
     small(attr?): JQuery;
-    br(times?,attr?): JQuery;
+    br(times?, attr?): JQuery;
     center(attr?): JQuery;
     kbd(content?): JQuery;
     div(attr?): JQuery;
     img(attr?): JQuery;
     span(attr?): JQuery;
     strong(childs?, attr?): JQuery;
+    /**
+    * items : [item1,item2,...]
+    * items : [[item1,value1],[item2,value2],...]
+    */
     ul(items?, attr?): JQuery;
     li(attr?): JQuery;
     svg(attr?): JQuery;
@@ -81,6 +85,16 @@ interface BootJStrap {
     glyphicon(name): JQuery;
     dropdown(tag, title, items, icon?): JQuery;
     navbar(brand, left_menu, left_things, right_menu): JQuery;
+    /**
+    * items = [[title:JQuery,content:JQuery], [title:JQuery,content:JQuery], ...]
+    */
+    accordion(items: any[], css?: string): JQuery;
+    /**
+    * you can use .val of returned Object to get selected index 
+    * returns: JQuery
+    * items : [[title,content], [title,content],...]
+    */
+    tab(items?, attr?): JQuery;
     breadcrumb(): JQuery;
     topmenu(brand?, left_menu?, left_things?, right_menu?): JQuery;
     modal(size, header, body, footer);
